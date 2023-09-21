@@ -1,25 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { ChakraProvider, CSSReset } from "@chakra-ui/react";
+import Home from "./pages/home/home";
+import { customTheme } from "./theme";
 
 function App() {
+  const width = window.innerWidth;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider theme={customTheme}>
+      <CSSReset />
+      <div className="App" style={{ overflow: `${width > 1000 ? "hidden" : "scroll"}` }}>
+        <Home />
+      </div>
+    </ChakraProvider>
   );
 }
 
