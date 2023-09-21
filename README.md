@@ -1,6 +1,6 @@
 # Fake Coffee Shop Website
 
-![Demo Animation](https://github.com/Mcutrer5/Coffee-Shop-Showcase/blob/Mommy/preview.gif?raw=true)
+![Demo Animation](https://raw.githubusercontent.com/Mcutrer5/Coffee-Shop-Showcase/master/images/preview.gif)
 
 This project is a fake coffee shop website built with React, Vite, Chakra UI, and TypeScript. It demonstrates my abilities in front-end development and showcases a coffee shop's website with various features.
 
