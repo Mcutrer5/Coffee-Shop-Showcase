@@ -25,4 +25,4 @@ To get started with this project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/fake-coffee-shop-website.git
+   git clone https://github.com/Mcutrer5/Coffee-Shop-Showcase.git
