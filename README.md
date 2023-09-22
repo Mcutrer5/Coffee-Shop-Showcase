@@ -4,6 +4,8 @@
 
 This project is a fake coffee shop website built with React, Vite, Chakra UI, and TypeScript. It demonstrates my abilities in front-end development and showcases a coffee shop's website with various features.
 
+This site uses Mapbox and will require a key to use the map. It is easily replaced with any other embedded map.
+
 ## Features
 
 - Sidebar with a logo and shop name.
