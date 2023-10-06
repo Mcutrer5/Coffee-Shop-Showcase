@@ -38,7 +38,7 @@ class Home extends React.Component {
               </Flex>
             </Flex>
           ) : null}
-          <Flex gridColumn="span 18" bg="gray.200" height="100vh" bgSize="auto" bgPosition="center" position="relative">
+          <Flex gridColumn="span 18" bg="gray.200" height="100vh" width="100vw" bgSize="auto" bgPosition="center" position="relative">
             {/* if the screen is less than 1000px wide, don't show the map */}
             {width > 1000 ? (
               <div style={{ height: "100vh", width: "100%" }} className="mapContainer">

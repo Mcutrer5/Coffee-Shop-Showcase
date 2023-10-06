@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
 
 const Map: React.FC = () => {
-    
     (mapboxgl as any).accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
     // (mapboxgl as any).accessToken = "";
 
