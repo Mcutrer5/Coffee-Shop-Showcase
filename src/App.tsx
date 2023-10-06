@@ -8,9 +8,20 @@ function App() {
   return (
     <ChakraProvider theme={customTheme}>
       <CSSReset />
-      <div className="App" style={{ overflow: `${width > 1000 ? "hidden" : "scroll"}` }}>
-        <Home />
-      </div>
+      {/* if width is less than 1000px, use mobile layout, else use desktop layout */}
+      {
+        width < 1000 ?
+          <div style={{ overflow: 'visible' }}>
+            <Home />
+          </div>
+          :
+          <div className="App" style={{ overflow: "hidden" }}>
+            <Home /> 
+          </div>
+      }
+      {/* <div className="App" style={{ overflow: `${width > 1000 ? "hidden" : "scroll"}` }}> */}
+        {/* <Home /> */}
+      {/* </div> */}
     </ChakraProvider>
   );
 }
